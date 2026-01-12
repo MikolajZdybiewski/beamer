@@ -1,0 +1,67 @@
+\documentclass[10pt,aspectratio=169]{beamer}
+\usetheme[vertical, lang=pl, pagenumbers=true]{NewPwr}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{polski}
+\usepackage{booktabs}
+
+\title{Kryzys na rynku pamięci RAM w 2026 roku}
+\subtitle{Analiza przyczyn, skutków społeczno-ekonomicznych oraz prognozy stabilizacji}
+\author{Mikołaj Zdybiewski}
+\institute{Politechnika Wrocławska}
+\date{12.01.2026}
+
+\begin{document}
+
+% Strona tytułowa wykorzystująca grafikę tyt-pl.png
+\begin{frame}[plain]
+    \titlepage
+\end{frame}
+
+% Przeźrocze techniczne
+\begin{frame}{Zaliczenie zadania}
+    \begin{block}{Dane studenta}
+        \textbf{Imię i nazwisko:} Mikołaj Zdybiewski \\
+        \textbf{Data oddania:} 12.01.2026
+    \end{block}
+    \begin{block}{Repozytorium projektu}
+        Kompletny kod źródłowy, pliki .sty oraz grafiki są dostępne tutaj: \\
+        \url{https://github.com/MikolajZdybiewski/beamer}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Plan prezentacji}
+    \tableofcontents
+\end{frame}
+
+\input{rozdzial1}
+\input{rozdzial2}
+
+\section{Podsumowanie}
+\begin{frame}{Podsumowanie i wnioski}
+    \begin{itemize}
+        \item Rynek pamięci RAM w 2026 roku doświadczył bezprecedensowego wzrostu cen (średnio o 47\% rok do roku).
+        \item Głównym winowajcą jest „kanibalizacja” linii produkcyjnych przez wysokomarżowe pamięci HBM dla sektora AI.
+        \item Konsumenci muszą przygotować się na wyższe koszty elektroniki użytkowej co najmniej do III kwartału 2026.
+        \item Kluczem do stabilizacji będzie uruchomienie nowych fabryk w USA i Europie planowane na przełom 2026/2027.
+    \end{itemize}
+\end{frame}
+
+% Podziękowanie z zachowaniem baneru bocznego slajd-pl.png
+\begin{frame}
+    \centering
+    \vspace{1.5cm}
+    \huge \color{Logo} \textbf{Dziękuję za uwagę}
+\end{frame}
+
+% Materiały źródłowe bez rzymskiej cyfry I w tytule
+\section{Materiały źródłowe}
+\setbeamertemplate{frametitle continuation}{} 
+\begin{frame}[allowframebreaks]{Materiały źródłowe}
+    \nocite{*} 
+    \bibliographystyle{abbrv}
+    \bibliography{bibliografia}
+\end{frame}
+
+\end{document}
